@@ -1,5 +1,5 @@
-pub mod ast;
+pub mod parser;
 
 fn main() {
-    
+    parser::parse()
 }
