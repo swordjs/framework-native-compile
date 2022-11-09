@@ -1,0 +1,12 @@
+[package]
+name = "sword-proto-parser"
+version = "0.1.0"
+
+[[bin]]
+name = "sword-proto-parser"
+path = "src/lib.rs"
+
+[dependencies]
+log = "0.4"
+pest = "2"
+pest_derive = "2"

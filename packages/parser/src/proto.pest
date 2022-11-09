@@ -113,4 +113,4 @@ COMMENT = _{ "//" ~ (!"\n" ~ ANY)* }
 MULTILINE_COMMENT = _{ "/*" ~ (!"*/" ~ ANY)* ~ "*/" }
 
 // 对proto文件设置规则
-proto = _{ SOI ~ (Import | ImportFrom | Interface | Class | Type | Statement)* ~ EOI }
+proto = _{ SOI ~ (ExportReqParams | ExportReqQuery | ExportRes)* ~ EOI }

@@ -63,6 +63,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc7fcc620a3bff7cdd7a365be3376c97191aeaccc2a603e600951e452615bf89"
 
 [[package]]
+name = "log"
+version = "0.4.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "abb12e687cfb44aa40f41fc3978ef76448f9b6038cad6aef4259d3c095a2382e"
+dependencies = [
+ "cfg-if",
+]
+
+[[package]]
 name = "once_cell"
 version = "1.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -144,7 +153,19 @@ dependencies = [
 [[package]]
 name = "sword-framework-doc-compile"
 version = "0.1.0"
+
+[[package]]
+name = "sword-framework-doc-compile-tests"
+version = "0.0.1"
 dependencies = [
+ "sword-proto-parser",
+]
+
+[[package]]
+name = "sword-proto-parser"
+version = "0.1.0"
+dependencies = [
+ "log",
  "pest",
  "pest_derive",
 ]
